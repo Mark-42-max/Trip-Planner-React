@@ -1,13 +1,166 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 25vw;
+    height: 70vh;
+    border: 2px solid #6f0ce8;
+    overflow: auto;
+}
+
+
+/* Header */
+
+.head {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+}
+
+.head h1 {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* buttons */
+
+.btn {
+    width: 20%;
+    height: 2.5rem;
+    background-color: green;
+    color: white;
+    white-space: normal;
+}
+
+.anti-btn {
+    width: 20%;
+    height: 2.5rem;
+    background-color: red;
+    color: white;
+    white-space: normal;
+}
+
+.btn-large {
+    width: 90%;
+    height: 3rem;
+    background-color: green;
+    color: white;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem;
+}
+
+.btn-large:hover {
+    color: red;
+}
+
+
+/* Content */
+
+.content {
+    padding: 3rem;
+    border-top: 2px solid red;
+}
+
+.content p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* For each individual task */
+
+.task {
+    /* to provide gap between 2 block elements */
+    margin: 3rem;
+    padding: 1.5rem;
+    background-color: slateblue;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hover {
+    width: 3rem;
+    height: 3rem;
+}
+
+.hover:hover {
+    color: red;
+}
+
+
+/*changing component*/
+
+.reminder {
+    margin: 3rem;
+    padding: 1.5rem;
+    background-color: slateblue;
+    border: 5px solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reminder p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Form submission */
+
+.form-control {
+    width: 80%;
+    height: 5vh;
+    border: 2px solid red;
+    margin: 1.5rem;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
