@@ -1,0 +1,28 @@
+{
+    "logs": [
+
+        {
+            "index": 1,
+            "destination": "Goa",
+            "days": 12,
+            "people": 15,
+            "state": false
+        },
+
+        {
+            "index": 2,
+            "destination": "Manali",
+            "days": 10,
+            "people": 14,
+            "state": true
+        },
+
+        {
+            "index": 3,
+            "destination": "Lonavala",
+            "days": 20,
+            "people": 16,
+            "state": false
+        }
+    ]
+}
