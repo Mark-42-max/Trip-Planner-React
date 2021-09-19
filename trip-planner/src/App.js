@@ -1,36 +1,31 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import Header from "./Components/Header"
 import Logs from "./Components/Logs"
 
 function App() {
 
-  const [logs, setLogs] = useState(
-  [
-    {
-    "index": 1,
-    "destination": "Goa",
-    "days": 12,
-    "people": 15,
-    "state": false
-    },
+  const [logs, setLogs] = useState([])
 
-    {
-    "index": 2,
-    "destination": "Manali",
-    "days": 10,
-    "people": 14,
-    "state": true
-    },
+  const fetchData = async () => {
+    const res = await fetch('http://127.0.0.1:5000/logs');
+    const data = await res.json();
 
-    {   
-    "index": 3,
-    "destination": "Lonavala",
-    "days": 20,
-    "people": 16,
-    "state": false
+    return data;
+  }
+
+
+
+  useEffect(() => {
+    const getData = async () => {
+      const dataFromServer = await fetchData();
+
+      setLogs([...dataFromServer]);
     }
-  ]
-)
+
+    getData();
+
+  }, [])
 
   const done = (index) => {
     setLogs(logs.filter((log) => log.index !== index));
