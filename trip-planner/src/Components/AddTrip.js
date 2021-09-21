@@ -5,7 +5,7 @@ const AddTrip = ({onSubmit}) => {
 
 
     const [destination, setDest] = useState("");
-    const [day, setDay] = useState (0);
+    const [days, setDay] = useState (0);
     const [people, setPeople] = useState(0);
     const [state, setState] = useState(false);
 
@@ -16,7 +16,7 @@ const AddTrip = ({onSubmit}) => {
             alert("Please enter destinationination");
         }
 
-        onSubmit({destination, day, people, state});
+        onSubmit({destination, days, people, state});
 
         setDest("");
         setDay(0);
@@ -36,7 +36,7 @@ const AddTrip = ({onSubmit}) => {
             
             <label>Days Planned</label>
             <div className = "form-control">
-                <input type="text" placeholder = "Number of days to stay" value = {day} onChange = {(e) => {setDay(e.target.value)}}/>
+                <input type="text" placeholder = "Number of days to stay" value = {days} onChange = {(e) => {setDay(e.target.value)}}/>
             </div>
 
             <label>Number of People </label>
