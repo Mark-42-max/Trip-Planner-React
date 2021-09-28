@@ -1,6 +1,6 @@
 import Log from "./Log"
 
-const Logs = ({logs, onClick,toggleState}) => {
+const Logs = ({logs, onClick,toggleState, details}) => {
     return (
         <div className = "content">
             {logs.map((log) => (<Log key = {log.id} log = {log} onClick = {onClick} toggleState = {toggleState}/>))}

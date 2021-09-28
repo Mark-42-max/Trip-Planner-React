@@ -91,6 +91,14 @@ h3 {
     color: red;
 }
 
+.btn2 {
+    width: 30%;
+    height: 2.5rem;
+    background-color: green;
+    color: white;
+    white-space: normal;
+}
+
 
 /* Content */
 

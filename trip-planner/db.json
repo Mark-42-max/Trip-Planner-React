@@ -6,15 +6,17 @@
       "destination": "Manali",
       "days": 10,
       "people": 14,
-      "state": true
+      "state": true,
+      "details": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, aliquid magnam. Officiis aliquam eaque rem atque praesentium ut expedita, sunt quasi sapiente numquam in quas iusto odio amet delectus magnam."
     },
     {
       "id": 3,
       "index": 3,
-      "destination": "Lonavala",
-      "days": 20,
-      "people": 16,
-      "state": false
+      "destination": "Goa",
+      "days": 3,
+      "people": 2,
+      "state": false,
+      "details": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, aliquid magnam. Officiis aliquam eaque rem atque praesentium ut expedita, sunt quasi sapiente numquam in quas iusto odio amet delectus magnam."
     }
   ]
 }

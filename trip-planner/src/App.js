@@ -84,7 +84,6 @@ function App() {
   }
 
 
-
   //Main app return
   return (
     <div className = "container">
@@ -92,6 +91,23 @@ function App() {
       {logs.length !== 0 ? <Logs logs = {logs} onClick = {done} toggleState = {onToggleState}/>: <h3 className = "h3">No Trips to view</h3>}
     </div>
   );
+
+  // {
+  //   id: 2,
+  //   index: 2,
+  //   destination: "Manali",
+  //   days: 10,
+  //   people: 14,
+  //   state: true
+  // },
+  // {
+  //   id: 3,
+  //   index: 3,
+  //   destination: "Lonavala",
+  //   days: 20,
+  //   people: 16,
+  //   state: false
+  // }
 }
 
 export default App;
