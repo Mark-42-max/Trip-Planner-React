@@ -172,3 +172,14 @@ h3 {
     align-items: center;
     gap: 5rem;
 }
+
+@media (max-width: 600px) {
+    .container {
+        width: 80vw;
+        height: 100vh;
+    }
+    .task {
+        width: 70%;
+        height: 40%;
+    }
+}
