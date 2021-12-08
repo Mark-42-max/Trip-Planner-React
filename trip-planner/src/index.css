@@ -173,7 +173,10 @@ h3 {
     gap: 5rem;
 }
 
-@media (max-width: 600px) {
+
+/*Mobile responsive*/
+
+@media (max-width: 700px) {
     .container {
         width: 80vw;
         height: 100vh;
